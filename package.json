@@ -1,0 +1,24 @@
+{
+  "name": "profile-page",
+  "version": "1.0.0",
+  "description": "MY profile page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krittika-Saha/Profile-Page.git"
+  },
+  "author": "KS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Krittika-Saha/Profile-Page/issues"
+  },
+  "homepage": "https://github.com/Krittika-Saha/Profile-Page#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
