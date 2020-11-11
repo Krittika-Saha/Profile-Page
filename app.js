@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
+const axios = require('axios');
 
 const app = express();
 
@@ -11,7 +12,18 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', function(req, res) {
-  res.render('home')
+
+  const url = 'https://sv443.net/jokeapi/v2/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist&type=single'
+  axios.get(url)
+  .then(response => {
+    res.render('home', {joke: response.data.joke, category: response.data.category})
+    console.log('200. Success');
+  })
+  .catch(error => {
+    console.log(error);
+  });
+
+
 });
 
 app.listen(9000, function() {

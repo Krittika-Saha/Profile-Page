@@ -134,3 +134,63 @@ hr{
   margin-right: 20px;
   color: black;
 }
+#projects{
+  background-color: #f8edf8;
+}
+
+/* Project Card */
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  opacity: 0;
+  float: left;
+  position: absolute;
+  top: 20%;
+}
+
+.container2:hover .image {
+  opacity: 0.3;
+}
+.container2:hover{
+  background-color:rgba(7, 67, 69, 0.3);
+}
+.container2:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: #074345;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text hr{
+  width: 100%;
+  font-weight:bold;
+}
+.text p{
+  font-weight:bold;
+}
+#container2{
+  margin-left: 10%;
+  width: 50%
+}
+ul{
+  list-style-type: none;
+}
+.joke h4{
+  color:#898b8a;
+  font-family: 'Varela Round', sans-serif;
+  text-align: justify;
+}
+.joke{
+  margin-top: 10%;
+  margin-left: 20%;
+
+}
