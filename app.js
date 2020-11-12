@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 
 let name = ''
 
-mongoose.connect("mongodb://localhost:27017/contactDB", {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://admin-krittika:test123@krittikasahapersonalweb.n8pxt.mongodb.net/contactDB?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true})
 
 const postSchema = {
   name: {
