@@ -21,6 +21,9 @@ hr{
 -------------------------------------------------- */
 
 /* Carousel base class */
+#myCarousel{
+  background-color: #f8edf8;
+}
 .carousel {
   margin-bottom: 4rem;
 
@@ -110,9 +113,6 @@ hr{
   right: 0px;
   bottom: 65px
 }
-.carousel-control-prev{
-  color:#898b8a;
-}
 .ability-score{
   float: right;
   color: #13b3b9;
@@ -193,4 +193,11 @@ ul{
   margin-top: 10%;
   margin-left: 20%;
 
+}
+
+#contactMe{
+  background-color: #f8edf8;
+}
+#contactMe h1, label{
+  color:#898b8a;
 }

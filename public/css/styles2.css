@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Varela+Round&display=swap');
+
+
+h1{
+  text-align: left;
+  font-size: 3rem;
+  font-family: 'Varela Round', sans-serif;
+  color: #13b3b9;
+}
+hr{
+  color: #ffccff;
+}
