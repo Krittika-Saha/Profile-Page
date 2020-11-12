@@ -43,22 +43,7 @@
     <hr>
   </div>
 
-  <div id='contactMe' class='jumbotron'>
-    <h1 style="font-family: 'Varela Round', sans-serif;">Contact Me</h1><br/>
-    <form class="" action="/" method="post">
-      <div class="form-group">
-        <label>Name</label>
-        <input class="form-control" type="text" name="postName" placeholder="Your First Name" required><br/>
-        <label>Email(optional)</label>
-        <input class="form-control" type="text" name="userEmail" placeholder="Email"><br/>
-        <label>Title</label>
-        <input class="form-control" type="text" placeholder="Issue/Comment Title" name="postTitle" required><br/>
-        <label>Post</label>
-        <textarea class="form-control" name="postBody" rows="5" cols="30" placeholder="Main Content" required></textarea><br/>
-      </div>
-      <button class="btn btn-info" type="submit" name="button">Send</button>
-    </form>
-  </div>
+    <%- include('partials/contactme.ejs')%>
   <br><br><br><br><br>
   <footer>
       <%- include('partials/footer.ejs')%>

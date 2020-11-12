@@ -122,7 +122,7 @@ hr{
 }
 
 .footer {
-  position: fixed;
+  position:fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -200,4 +200,11 @@ ul{
 }
 #contactMe h1, label{
   color:#898b8a;
+}
+
+.form-contact {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
 }
