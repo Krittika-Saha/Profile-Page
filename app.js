@@ -64,7 +64,10 @@ app.post('/', function(req, res) {
   res.render("sent.ejs");
 });
 
-
-app.listen(9000, function() {
-  console.log("Server started on port 9000.");
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 9000;
+}
+app.listen(port, function() {
+  console.log("Server started successfully.");
 });
