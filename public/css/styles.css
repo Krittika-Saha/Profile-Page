@@ -113,12 +113,13 @@ hr{
 }
 
 .footer {
-  position:fixed;
-  left: 0;
-  bottom: 0;
+  position:relative;
+  /* left: 0;
+  bottom: 0; */
   width: 100%;
   background-color: #f6f5f1;
   text-align: center;
+  color: black;
 }
 .footer i {
   font-size:35px;
