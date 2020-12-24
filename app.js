@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-let name = ''
 
 mongoose.connect("mongodb+srv://admin-krittika:test123@krittikasahapersonalweb.n8pxt.mongodb.net/contactDB?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true})
 
@@ -33,8 +32,6 @@ const postSchema = {
 };
 
 const Post = mongoose.model("Post", postSchema);
-
-let contacts = [];
 
 app.get('/', function(req, res) {
 

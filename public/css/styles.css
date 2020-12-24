@@ -83,11 +83,13 @@ hr{
   color: #13b3b9;
 }
 #profile{
+
   width: 30.5%;
   height: 100%;
   position: absolute;
   right: 0px;
-  bottom: 90px
+  bottom: 90px;
+  
 }
 #coding{
   width: 30.5%;
