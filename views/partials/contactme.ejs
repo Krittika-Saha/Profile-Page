@@ -1,6 +1,6 @@
 <div id='contactMe' class='jumbotron'>
   <h1 style="font-family: 'Varela Round', sans-serif; text-align: center;">Contact Me</h1><br/>
-  <form class="form-contact" action="/" method="post">
+  <form class="form-contact" action="/" method="post" id='contact-me-form'>
     <div class="form-group">
       <label>Name</label>
       <input class="form-control" type="text" name="postName" placeholder="Your First Name" required><br/>
@@ -10,7 +10,17 @@
       <input class="form-control" type="text" placeholder="Issue/Comment Title" name="postTitle" required><br/>
       <label>Post</label>
       <textarea class="form-control" name="postBody" rows="5" cols="30" placeholder="Main Content" required></textarea><br/>
-<div id="hcaptcha-demo" class="h-captcha" data-sitekey="9598647a-f8d4-42b9-b3f3-1d4a0dce80c0" data-callback="onSuccess" data-expired-callback="onExpire"></div>    </div>
+      <div id="hcaptcha-demo" class="h-captcha" data-sitekey="9598647a-f8d4-42b9-b3f3-1d4a0dce80c0" data-callback="onSuccess" data-expired-callback="onExpire"></div>    </div>
     <button class="btn btn-info" type="submit" name="button">Send</button>
   </form>
 </div>
+
+<script>
+  window.onload = function() {
+    var recaptcha = document.forms["contact-me-form"]["hcaptcha-demo"];
+    recaptcha.required = true;
+    recaptcha.oninvalid = function(e) {
+      alert("Please complete the captcha");
+    }
+  }
+  </script>
