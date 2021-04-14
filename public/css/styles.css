@@ -17,15 +17,6 @@ hr{
   color: #ffccff;
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-
-/* Since positioning the image, we need to help out the caption */
-
-
-/* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
 }
@@ -89,7 +80,7 @@ hr{
   position: absolute;
   right: 0px;
   bottom: 90px;
-  
+
 }
 #coding{
   width: 30.5%;
